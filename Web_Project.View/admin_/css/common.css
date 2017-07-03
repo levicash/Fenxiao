@@ -1,0 +1,17 @@
+﻿/*公共类*/
+*{font-size:9pt;border:0;margin:0;padding:0;}
+body{font-family:'微软雅黑'; margin:0 auto;min-width:980px;}
+div:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
+.clearfix::before, .clearfix::after {content: " ";display: block;height: 0;overflow: hidden;}
+.clearfix::after {clear: both;}
+ul{display:block;margin:0;padding:0;list-style:none;}
+li{display:block;margin:0;padding:0;list-style: none;}
+img{border:0;}
+a,a:focus{text-decoration:none;color:#000;outline:none;blr:expression(this.onFocus=this.blur());}
+a:hover{color:#00a4ac;text-decoration:none;}
+table{border-collapse:collapse;border-spacing: 0;}
+cite{font-style:normal;}
+h2{font-weight:normal;}
+.fl{float: left;}
+.fr{float: right;}
+.tright{ text-align: right;}

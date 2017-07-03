@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.fl{ float:left;}
+.fr{ float:right;}
+
+.txtScroll-top{ position:relative;min-height: 32px;padding-left: 60px;background: url(../images/icon5.jpg) no-repeat 15px center; overflow:hidden;}
+.txtScroll-top .bd{ padding:15px 0;  }
+.txtScroll-top .infoList li{ height:2rem; line-height:2rem;overflow: hidden;}
+.txtScroll-top .infoList li a{ font-size: 1.5rem;}
+
+.repro{ width: 100%;overflow: hidden;}
+.repro_1{ width: 32%;float: left;margin-left: 0.3rem;overflow: hidden;}
+.repro_2{ width: 100%;}
+.repro_2 img{ width: 100%;}
+.repro_3{ width: 100%;padding-top: 10px;font-size: 1.3rem;line-height: 1.4rem;}
+
+.indexpro{ width: 100%;overflow: hidden;}
+.indexpro_1{ width: 48%;float: left;margin-left: 0.5rem;overflow: hidden;}
+.indexpro_2{ width: 100%;}
+.indexpro_2 img{ width: 100%;}
+.indexpro_3{ width: 100%;height: 5.4rem;padding-top: 10px;font-size: 1.3rem;line-height: 1.5rem;overflow: hidden;}
+.indexpro_4{ width: 100%;padding: 5px 0 10px;color: #ff0000;overflow: hidden;}
+
+.j-content{ display: none;}
+
+.heian{ position: absolute;width: 100%;height: 100%;background-color: #cccccc;left: 0;top: 0;z-index: 999998;filter:alpha(Opacity=80);-moz-opacity:0.5;opacity: 0.5;display: none; }
+.ptan{position:fixed; bottom:-425px; left:0; width: 100%; height: 425px;background-color: #fff; padding:20px 0; border:none;z-index: 999999;}
+.ptan_1{ width: 95%;margin: auto;overflow: hidden;}
+.ptan_2{ width: 100%;padding-bottom: 10px;border-bottom: 1px solid #ccc;overflow: hidden;}
+.ptan_3{ width: 30%;float: left;overflow: hidden;}
+.ptan_3 img{ width: 100%;height: 100%;}
+.ptan_4{ width: 67%;float: right;overflow: hidden;}
+.ptan_5{ width: 100%;font-size: 1.5rem;line-height: 2rem;color: #000;overflow: hidden;}
+.ptan_6{width: 100%;font-size: 1.5rem;color: #c00;padding-top: 15px;overflow: hidden;}
+.ptan_7{width: 100%;font-size: 1.5rem;padding: 10px 0;overflow: hidden;}
+.Spinner{display:block;overflow:hidden;width:200px;float:left;margin:0 0 15px 5px;}
+.Spinner .Amount{width:70px;height:40px;font-size: 1.5rem;padding:4px 5px;line-height:17px;border-width:1px 0;border-style:solid;border-color:#d9d9d9;float:left;text-align:center;color:#565656;outline:0;}
+.Spinner a{display:inline-block;width:40px;height:40px;border:1px solid #d9d9d9;background-color:#f7f7f7;float:left;cursor:pointer;outline:0;}
+.Spinner a i{font-style:normal;background:url(../images/BuynBtn.png) no-repeat;display:block;width:23px;height:23px;margin: 8px;text-indent:999999%;overflow:hidden;}
+.Spinner .Decrease i{background-position:-23px -23px;}
+.Spinner .Increase i{background-position:-23px -0px;}
+.Spinner .DisDe i{background-position:-0px -23px;}
+.Spinner .DisIn i{background-position:-0px -0px;}
+.ptan_9{width: 100%;padding: 10px 0;background-color: #f4f8fb;overflow: hidden;}
+.ptan_9 a.a1{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #feab47), color-stop(1, #ff5200));
+  color: #fff;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.8rem;
+  display: block;
+  width: 48%;
+  text-align: center;
+    float: right;}
+  .ptan_9 a.a2  {background: #feab47;
+  color: #fff;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.8rem;
+  display: block;
+  width: 48%;
+  text-align: center;
+  float: left;}
+  
+  .ptan_10{width: 100%;font-size: 1.8rem;padding: 0 0 10px;border-bottom: 1px solid #ccc;overflow: hidden;}
+  .ptan_7 input{ width: 100%;font-size: 1.5rem;padding: 30px 0 30px 5px;margin-top: 10px;border: 1px solid #ddd;}
+  
+  .order_1{ width: 95%;padding: 15px 0;margin: auto;font-size: 1.5rem;overflow: hidden;}
+  .order_2{ float: left;padding-top: 8px;}
+  .order_3{ float: right;color: #f36142;}
+  .order_3 a{ display: block;padding: 5px 10px;border: 1px solid #ccc;}
+  
+  .txt_icon{position: absolute; width: 50px; height:50px; right: 5px;top: 5px; overflow: hidden;}
+  .txt_icon a{ display: block;width: 50px; height:50px;font-size: 1.2rem;line-height: 3rem;text-align: center;color: #fff;border-radius: 50%;background-color: #f36142;}
+  .tixian{ width: 100%;overflow: hidden;}
+  .tixian_1{ width: 100%;padding: 10px;border-bottom: 2px solid #ccc;overflow: hidden;}
+  .tixian_1 dl{ width: 33.3%;text-align: center;float: left;overflow: hidden;}
+  .tixian_1 dl dt{ width: 100%;padding: 15px 0;color: #000;font-weight: bold;font-size: 1.5rem;}
+  .tixian_2{ width: 100%;padding-top: 10px;overflow: hidden;}
+  .tixian_2 table td{ text-align: center;height: 3.5rem;border-bottom: 1px dashed #ccc;font-size: 1.4rem;}
+  .tixian_2 table td span{ color: #f36142;}
+  .tixian_2 table td.td2{ text-align: left;padding-left: 70px;}
+  .tixian_3{width: 100%;padding-top: 30px;overflow: hidden;}
+  .tixian_3 table td{ padding: 10px 0;}
+  .tixian_3 .input_yh{ width: 60%;font-size: 1.5rem;padding: 10px 0 10px 5px;margin: 10px 0 0 15px;border: 1px solid #ddd;}
+  .tixian_3 a.a1{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #feab47), color-stop(1, #ff5200));
+  color: #fff;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.8rem;
+  display: block;
+  width: 45%;
+  text-align: center;
+    float: left;margin:15px 0 0 10px;}
+  .tixian_3 a.a2  {background: #feab47;
+  color: #fff;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.8rem;
+  display: block;
+  width: 45%;
+  text-align: center;
+  float: left;margin-top: 15px;}
+  

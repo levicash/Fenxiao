@@ -1,0 +1,84 @@
+﻿/*列表页面*/
+.rightinfo{padding:8px;}
+.tools{clear:both; height:35px; margin-bottom:8px;}
+.serdiv{ padding-left: 10px;line-height: 35px;}
+.serdiv dl{ float: left;height:35px;line-height: 35px;}
+.serdiv dl dt{ height: 35px;float: left;}
+.serdiv dl dd{ height: 35px;float: left;}
+.serdiv_1{padding-left: 20px; line-height: 35px;}
+.serdiv_1 span{ color: #ff0000;}
+.serdiv_2{ padding-left: 10px;line-height: 35px;}
+.serdiv_2 a{display: block; line-height:33px; height:33px; border:solid 1px #d3dbde; float:left; padding:0 15px; margin-right:5px;border-radius: 3px; cursor:pointer;background:url(../images/toolbg.gif) repeat-x;}
+.toolbar{float:right;}
+.toolbar li{background:url(../images/toolbg.gif) repeat-x; line-height:33px; height:33px; border:solid 1px #d3dbde; float:left; padding-right:10px; margin-right:5px;border-radius: 3px; cursor:pointer;}
+.toolbar li span{float:left; margin-left:10px; margin-right:5px; margin-top:5px;}
+.toolbar li .button_add{ height:33px;padding-left: 35px;cursor: pointer;background:url(../images/t01.png) no-repeat 10px center;}
+.toolbar1{float:right;}
+.toolbar1 li{background:url(../images/toolbg.gif) repeat-x; line-height:33px; height:33px; border:solid 1px #d3dbde; float:left; padding-right:10px; margin-left:5px;border-radius: 3px;}
+.toolbar1 li span{float:left; margin-left:10px; margin-right:5px; margin-top:5px;}
+.tablelist{border:solid 1px #cbcbcb; width:100%; clear:both;}
+.tablelist th{background:url(../images/th.gif) repeat-x; height:34px; line-height:23px; border-bottom:solid 1px #b6cad2; text-indent:5px; text-align:left;}
+.tablelist td{ line-height:23px;padding: 10px 0 10px 10px; border-right: dotted 1px #c7c7c7;}
+.tablelist td .inp_order{ width: 30px;height: 20px;text-align: center; border: 1px solid #c7c7c7}
+.tablelink{color:#056dae;}
+.tablelist tbody tr.odd{background:#f5f8fa;}
+.tablelist tbody tr:hover{background:#e5ebee;}
+.sort{padding-left:3px;}
+.pager{padding: 5px 0; color:#ff6500; }
+.anpager{ float:left; padding:6px 0;}
+.pager span.cpb {  border:#ff5500 1px solid; padding:5px 7px; font-weight:bold; color:#ff5500; margin-right:3px; background:#ffeee5; }
+.pager span{ color:#999999; margin-right:3px; text-decoration:none;}
+.pager .pxi{ padding-top: 5px; float:left; }
+.pager a.disabled { border:#ffe3c6 1px solid; padding:5px 7px; color:#ffe3c6; margin-right:3px; background:#fff; }
+.pager a { border:#cccccc 1px solid; padding:5px 7px; color:#0063dc; background:#fff; margin-right:3px; text-decoration:none;}
+.pager a:hover {  border:#ff5500 1px solid; color:#ff5500; background:#ffeee5;}
+.page_txt{width:20px;border:#cccccc 1px solid; text-align:center}
+.btn_page{ cursor: pointer;}
+.pagetit{ width:100%; padding:5px 0px;background-color:#f2f9fd; border:1px solid #cde6ff; margin:10px auto 0;}
+.pagetit:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
+.pagetit_1{ height: 30px;line-height: 30px;color: #1e5494;margin-left: 10px;}
+.pagetit_1 a{ color: #1e5494;}
+.pagetit_1 a:hover{ text-decoration: underline;}
+.pagetit_2{ padding-top: 3px;}
+.button{ height:23px; line-height:23px;display: block;float: left;margin-left: 10px; padding:0 10px 0 5px;background:url(../images/ibtnbg.png) repeat-x;border:solid 1px #bfcfe1; cursor:pointer;}
+.button span{ float: left;display: block;padding-top: 2px;margin-right: 5px;}
+
+/*添加页面*/
+.formbody{padding:10px 18px;}
+.formtitle{border-bottom:solid 1px #d0dee5; line-height:35px; position:relative; height:35px; margin-bottom:15px;}
+.formtitle span{font-weight:bold;font-size:14px; border-bottom:solid 3px #66c9f3;float:left; position:absolute; z-index:100; bottom:-1px; padding:0 3px; height:30px; line-height:30px;}
+.forminfo{padding-left:23px;}
+.forminfo li{margin-bottom:13px; clear:both;}
+.forminfo li:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
+.forminfo li label{width:86px;line-height:34px; display:block; float:left;}
+.forminfo li i{color:#7f7f7f; padding-left:20px; font-style:normal;}
+.forminfo li cite{display:block; padding-top:10px;}
+.forminfo li .zhushi{ float: left;padding-top: 10px;}
+.dfinput{width:345px; height:32px; line-height:32px; border-top:solid 1px #a7b5bc; border-left:solid 1px #a7b5bc; border-right:solid 1px #ced9df; border-bottom:solid 1px #ced9df; background:url(../images/inputbg.gif) repeat-x; text-indent:10px;}
+.dfinput:focus {border: 1px solid #72c521;}
+.cdfinput{width:524px; height:32px; line-height:32px; border-top:solid 1px #a7b5bc; border-left:solid 1px #a7b5bc; border-right:solid 1px #ced9df; border-bottom:solid 1px #ced9df; background:url(../images/inputbg.gif) repeat-x; text-indent:10px;}
+.cdfinput:focus {border: 1px solid #72c521;}
+.sdfinput{width:150px; height:32px; line-height:32px; border-top:solid 1px #a7b5bc; border-left:solid 1px #a7b5bc; border-right:solid 1px #ced9df; border-bottom:solid 1px #ced9df; background:url(../images/inputbg.gif) repeat-x; text-indent:10px;}
+.sdfinput:focus {border: 1px solid #72c521;}
+.prinput{width:190px; height:32px; line-height:32px; border-top:solid 1px #a7b5bc; border-left:solid 1px #a7b5bc; border-right:solid 1px #ced9df; border-bottom:solid 1px #ced9df; background:url(../images/inputbg.gif) repeat-x; text-indent:10px;}
+.prinput:focus {border: 1px solid #72c521;}
+.textinput{border-top:solid 1px #a7b5bc; border-left:solid 1px #a7b5bc; border-right:solid 1px #ced9df; border-bottom:solid 1px #ced9df; background:url(../images/inputbg.gif) repeat-x; padding:10px; width:450px; height:100px; line-height:20px; overflow:hidden;}
+.btn{width:137px;height:35px; background:url(../images/btnbg.png) no-repeat; font-size:14px;font-weight:bold;color:#fff; cursor:pointer;}
+.btn_res{width:137px;height:35px;margin-left: 10px; font-size:14px;font-weight:bold;color:#fff;background-color: #949494;border-radius: 5px; cursor:pointer; }
+.ibtn{ height:23px; display:block; padding:0 15px; cursor:pointer;background:url(../images/ibtnbg.png) repeat-x;border:solid 1px #bfcfe1;}
+.btn_div{ padding-left: 105px;}
+
+/*分配权限页面*/
+.table{margin-top: 5px;margin-bottom: 5px;}
+.table tr td {color: #1e5494;font-size: 12px;height: 30px;padding-left: 10px;}
+.table .td_bg{ padding: 7px 0 7px 20px;}
+
+/*tab切换*/
+.itab{height:36px; border-bottom:solid 1px #d0dee5; position:relative; border-left:solid 1px #d3dbde;}
+.itab ul li{float:left;height:37px; line-height:37px; background:url(../images/itabbg.png) repeat-x; border-right:solid 1px #d3dbde;}
+.itab ul li a{font-size:14px; color:#000; padding-left:25px; padding-right:25px;}
+.itab ul li a.selected{ height:37px; display:block; background:url(../images/itabbg1.png) repeat-x; font-weight:bold;}
+.tabson{margin:18px 0px;}
+.formtext{height:45px; padding-left:25px; line-height:20px; color:#848383;}
+.formtext b{color:#d70101;}
+.forminfo b{color:#ea2020; padding-left:3px;}

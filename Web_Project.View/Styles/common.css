@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding:0;}
+a {text-decoration:none; font-family:"Microsoft Yahei","SimSun" ; color:#333;}
+a:hover {text-decoration:none; color:#ff0000;}
+ul,p { margin:0; padding:0;}
+ul li { list-style:none;}
+img { border:none;}
+div:after{display:block; content:'clear'; clear:both; line-height:0; visibility:hidden;}
+body {font-family:"Microsoft Yahei","SimSun" ;color:#333; line-height:23px; font-size:14px; background-color:#f6f6f6; }
+.clearfix::before, .clearfix::after {content: " ";display: block;height: 0;overflow: hidden;}
+.clearfix::after {clear: both;}
+.clearfix{ clear:both;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+.top{ position:relative; z-index:1; height:25px;padding-top: 5px; background-color:#e3e4e5;}
+.juzhong{ width:1200px;margin: auto;font-size: 12px;display: none;}
+.top dl{ float:right;text-align:center;}
+.top dt{ float:left;}
+.top dd{ float:left;}
+.top dd a{ display:block; padding:0 12px; border-right:1px solid #666;}
+.top dt{ padding-right:15px;}
+.top dl a:hover{ color:red;}
+
+.se{ color:red;}
+.logo_box .se{ color:red;}
+.logo_box{ width:1200px; position:relative;z-index:2; height:144px;margin: auto;}
+.logo{ position:relative; top:-30px; left:-4px;z-index:2 }
+.ma{ float:right;position:absolute; right:0; top:5px;}
+.gouwu{ background:url(../images/gouwuche.png) no-repeat; width:190px; height:35px;position:absolute; right:105px; top:35px;}
+.gouwu ul{ padding-left:65px;}
+.gouwu ul li{ float:left; width:60px;font-size: 12px; text-align:center; line-height:35px;}
+.gouwu a:hover{ color:red;}
+.sousuo { float:right;position:relative;width:550px;position:absolute; right:324px; top:35px; box-sizing:border-box;}
+.sousuo ul li{ float:left; padding-right:12px; line-height:25px;}
+.sousuo ul li a{ font-size: 12px;}
+.sousuo a:hover{ color:red;}
+.nav{ float:left; position:absolute; left:206px; top:110px;}
+.nav li{ float:left; padding-left:30px;}
+.nav a{ font-size:16px; color:black;}
+.nav li a:hover{ color:red;}
+.surch{ float:left; width:550px; height:35px;}
+.surch a{ display:block; width:51px; height:35px; float:right; background:url(../images/fangdajing.png);}
+.surch input{ float:left; width:497px;border:1px solid red; height:33px; }
+
+/*footer*/
+.footer_top{ background-color:#dddddd; height:87px;}
+.footer_top_center{ display:block; width:1200px; margin:0 auto;}
+.footer_box{ background-color:#1a1a1a;}
+.footer_center{ width:1200px;margin: auto;overflow: hidden;}
+.footer_list_box{ width: 1500px;padding-bottom: 20px;}
+.footer_list_box dl{ float:left; padding-top:35px; width:120px; margin-right:95px;}
+.footer_list_box dl dt{ color:#cecece; line-height:42px;font-size: 16px;width:120px;}
+.footer_list_box dl dd a{display:block; width:120px; height:20px;color:#cecece; line-height:20px; overflow:hidden;}
+.footer_list_box dl dd a:hover{ color:white;}
+.footer_list{ line-height:20px; color:#8d8d8d;}
+.footer_nav1{width:1200px;padding: 15px 0; margin:0 auto; overflow:hidden;}
+.footer_nav1 a{padding:0 10px; color:#636363;}
+.footer_nav1 a:hover{ color:white;}
+
+.honor_box{ width:700px; margin:0 auto; overflow:hidden;}
+.honor_list{ float:left; padding:10px; overflow:hidden;}

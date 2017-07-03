@@ -1,0 +1,19 @@
+﻿
+/*右侧*/
+
+.mainindex{padding:20px; overflow:hidden;}
+.welinfo{height:32px; line-height:32px; padding-bottom:8px;}
+.welinfo span{float:left;}
+.welinfo b{padding-left:8px;}
+.welinfo a{padding-left:15px;color:#3186c8;}
+.welinfo a:hover{color:#F60;}
+.welinfo i{font-style:normal; padding-left:8px;}
+.xline{border-bottom:solid 1px #dfe9ee; height:5px;}
+.box{height:15px;}
+.boxfl{ width: 600px;float: left;}
+.boxfr{width: 550px;float: left;}
+.infolist{padding-left:40px; padding-bottom:15px;}
+.infolist li{ line-height:23px; height:23px; margin-bottom:8px;}
+.infolist li span{float:left; display:block;width: 120px;text-align: right;font-weight: bold; margin-right:10px;}
+.infolist li font{ color: #ff0000;font-weight: bold;}
+.helpinfo{padding-left:40px; background:url(../images/search.png) no-repeat 10px 15px; padding-top:15px; padding-bottom:20px;}
