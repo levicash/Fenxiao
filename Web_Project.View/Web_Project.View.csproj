@@ -153,7 +153,50 @@
     <Content Include="layer\skin\default\loading-0.gif" />
     <Content Include="layer\skin\default\loading-1.gif" />
     <Content Include="layer\skin\default\loading-2.gif" />
+    <Content Include="LuckDraw.aspx" />
+    <Content Include="LuckPrize.aspx" />
     <Content Include="OrdList.aspx" />
+    <Content Include="Roulette\css\common.css" />
+    <Content Include="Roulette\css\jqueryui\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-icons_222222_256x240.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Roulette\css\jqueryui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Roulette\css\jqueryui\jqueryui.css" />
+    <Content Include="Roulette\css\reset.css" />
+    <Content Include="Roulette\img\Jgg\gift0.jpg" />
+    <Content Include="Roulette\img\Jgg\gift1.jpg" />
+    <Content Include="Roulette\img\Jgg\gift2.jpg" />
+    <Content Include="Roulette\img\Jgg\gift3.jpg" />
+    <Content Include="Roulette\img\Jgg\gift4.jpg" />
+    <Content Include="Roulette\img\Jgg\gift5.jpg" />
+    <Content Include="Roulette\img\Jgg\gift6.jpg" />
+    <Content Include="Roulette\img\Jgg\gift7.jpg" />
+    <Content Include="Roulette\img\Jgg\lottery1.jpg" />
+    <Content Include="Roulette\img\Jgg\lottery2.jpg" />
+    <Content Include="Roulette\img\turnplate\jiang1.jpg" />
+    <Content Include="Roulette\img\turnplate\jiang2.jpg" />
+    <Content Include="Roulette\img\turnplate\plate_03.png" />
+    <Content Include="Roulette\img\turnplate\plate_03_8.png" />
+    <Content Include="Roulette\img\turnplate\plate_04.png" />
+    <Content Include="Roulette\img\turnplate\plate_04_8.png" />
+    <Content Include="Roulette\img\turnplate\plate_05.png" />
+    <Content Include="Roulette\img\turnplate\plate_05_8.png" />
+    <Content Include="Roulette\img\turnplate\plate_06.png" />
+    <Content Include="Roulette\img\turnplate\plate_06_8.png" />
+    <Content Include="Roulette\index.html" />
+    <Content Include="Roulette\js\DD_belatedPNG_0.0.8a-min.js" />
+    <Content Include="Roulette\js\jquery.min.js" />
+    <Content Include="Roulette\js\jqueryui.js" />
+    <Content Include="Scripts\Common.js" />
     <Content Include="Scripts\fahuo.js" />
     <Content Include="admin_\Scripts\hyshenhe.js" />
     <Content Include="admin_\SinglePage\AddInfo.aspx" />
@@ -1384,6 +1427,20 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LuckDraw.aspx.cs">
+      <DependentUpon>LuckDraw.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LuckDraw.aspx.designer.cs">
+      <DependentUpon>LuckDraw.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LuckPrize.aspx.cs">
+      <DependentUpon>LuckPrize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LuckPrize.aspx.designer.cs">
+      <DependentUpon>LuckPrize.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Member.aspx.cs">
       <DependentUpon>Member.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1673,6 +1730,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <Content Include="SiteMember.Master" />
+    <Content Include="Roulette\img\Jgg\jquery-latest.js" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
