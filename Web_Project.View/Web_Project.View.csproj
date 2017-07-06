@@ -134,10 +134,12 @@
     <Content Include="admin_\OrderList\AddWl.aspx" />
     <Content Include="admin_\Prize\AddInfo.aspx" />
     <Content Include="admin_\Prize\Info.aspx" />
+    <Content Include="admin_\Prize\Winning.aspx" />
     <Content Include="admin_\Scripts\update.js" />
     <Content Include="admin_\Scripts\OperatingOrder.js" />
     <Content Include="admin_\Scripts\chongzhish.js" />
     <Content Include="admin_\Scripts\tixian.js" />
+    <Content Include="admin_\Scripts\Winning.js" />
     <Content Include="admin_\TiXian\TiXian.aspx" />
     <Content Include="admin_\TiXian\TxInfo.aspx" />
     <Content Include="admin_\TiXian\TxList.aspx" />
@@ -997,6 +999,13 @@
     </Compile>
     <Compile Include="admin_\Prize\Info.aspx.designer.cs">
       <DependentUpon>Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_\Prize\Winning.aspx.cs">
+      <DependentUpon>Winning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_\Prize\Winning.aspx.designer.cs">
+      <DependentUpon>Winning.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin_\SinglePage\AddInfo.aspx.cs">
       <DependentUpon>AddInfo.aspx</DependentUpon>
