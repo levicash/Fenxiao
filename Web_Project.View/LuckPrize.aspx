@@ -5,8 +5,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>jQuery九宫格大转盘抽奖</title>
+    <title>九宫格大转盘抽奖</title>
     <style>
         #lottery {
             width: 570px;
