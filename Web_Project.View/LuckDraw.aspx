@@ -56,12 +56,6 @@
             });
         }
 
-        //抽奖前检查次数
-        function CheckCount() {
-            
-
-        }
-
         //抽奖完成给父页面传值
         function parentBak() {
             var userName = getCookie("WEB-SANJIFENXIAO");

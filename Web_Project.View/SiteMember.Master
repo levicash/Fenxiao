@@ -44,11 +44,11 @@
             function alterLuck() {
                 layer.open({
                     type: 2,
-                    area: ['700px', '700px'],
+                    area: ['700px', '620px'],
                     fixed: false, //不固定
                     //maxmin: true,
                     skin: 'layui-layer-rim', //加上边框
-                    content: ['LuckDraw.aspx','no']//去滚动条
+                    content: ['LuckPrize.aspx','no']//去滚动条
                 });
             }
 
