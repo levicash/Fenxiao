@@ -530,5 +530,24 @@ namespace Web_Project.View.admin_.StaticMethod
             return str;
         }
         #endregion
+
+        #region 审核当前中奖记录
+        [WebMethod]
+        public static string[] WinningMehod(int zid)
+        {
+            string[] str = new string[1];
+            string sql = string.Format("UPDATE ws_Winning SET IsReceive = 1, ReceiveTime = GETDATE() WHERE Id = {0}", zid);
+            int uid = DBHelpers.ExecuteNonQuery(DBHelpers.conn, CommandType.Text, sql, null);
+            if (uid > 0)
+            {
+                str[0] = "1";
+            }
+            else
+            {
+                str[0] = "2";
+            }
+            return str;
+        }
+        #endregion
     }
 }

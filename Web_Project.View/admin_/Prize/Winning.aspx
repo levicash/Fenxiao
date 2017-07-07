@@ -87,7 +87,7 @@
                             </td>
 
                             <td>
-                                <%--<%# Eval("ShenHe").ToString() == "2" ? "<a href='javascript:void(0)' zid=" + Eval("id") + " zname=" + Eval("Uname") + " zprice=" + Eval("JinEr") + " page=" + page + " class='shenhe' style='color: blue; text-decoration: underline;'>未兑奖</a>" : "<span style='color:red;'>已兑奖</span>"%>--%>
+                                <%# Eval("IsReceive").ToString() == "1"  ? "<span style='color:red;'>已兑奖</span>" : "<a href='javascript:void(0)' zid=" + Eval("id") + " page=" + page + " class='shenhe' style='color: blue; text-decoration: underline;'>未兑奖</a>"%>
                             </td>
                             <td>
                                 <%# DataBinder.Eval(Container.DataItem, "ReceiveTime", "{0:yyyy/MM/dd HH:mm:ss}")%>

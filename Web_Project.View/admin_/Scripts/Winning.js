@@ -8,29 +8,29 @@
             href1 = href;
         }
         var zid = $.trim($(this).attr("zid"));
-        var zname = $.trim($(this).attr("zname"));
-        var zprice = $.trim($(this).attr("zprice"));
+        //var zname = $.trim($(this).attr("zname"));
+        //var zprice = $.trim($(this).attr("zprice"));
         var page = $.trim($(this).attr("page"));
         layer.load(0, { shade: [0.1, '#000'] });
         layer.confirm('确认审核当前提现记录？', {
             title: '提示信息',
             btn: ['确定', '取消'] //按钮
         }, function () {
-            var dquery = "{zid:" + zid + ",zname:'" + zname + "',zprice:" + zprice + "}";
+            var dquery = "{zid:" + zid + "}";
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url: "../StaticMethod/Info.aspx/TiXianMehod",
+                url: "../StaticMethod/Info.aspx/WinningMehod",
                 data: dquery,
                 dataType: "json",
                 success: function (result) {
                     layer.closeAll('loading');
                     if (result.d[0] == "1") {
-                        layer.msg('提现成功', { icon: 2 });
+                        layer.msg('兑奖成功', { icon: 2 });
                         window.location.href = href1 + "?page=" + page;
                     }
                     if (result.d[0] == "2") {
-                        layer.msg('提现失败，请刷新重试', { icon: 2 });
+                        layer.msg('兑奖失败，请刷新重试', { icon: 2 });
                     }
                 },
                 error: function () {
