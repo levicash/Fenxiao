@@ -7,8 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Web_Project.Data;
 
-
-namespace Web_Project.View.admin_.Prize
+namespace Web_Project.View.admin_.Choujiang
 {
     public partial class Info : System.Web.UI.Page
     {
@@ -32,7 +31,7 @@ namespace Web_Project.View.admin_.Prize
         /// </summary>
         protected void ShowInfo()
         {
-            string sql = "select * from ws_Advertising order by Orders,Id";
+            string sql = "select * from ws_Prize order by Id";
             DataTable db = DBHelpers.ExecuteDataTable(DBHelpers.conn, CommandType.Text, sql, null);
             Repeater1.DataSource = db;
             Repeater1.DataBind();

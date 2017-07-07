@@ -7,7 +7,7 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Web_Project.View.admin_.Prize {
+namespace Web_Project.View.admin_.Choujiang {
     
     
     public partial class AddInfo {
@@ -22,40 +22,49 @@ namespace Web_Project.View.admin_.Prize {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// txtTitle 控件。
+        /// txtPno 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTitle;
+        protected global::System.Web.UI.WebControls.TextBox txtPno;
         
         /// <summary>
-        /// TextBox1 控件。
+        /// txtPname 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtPname;
         
         /// <summary>
-        /// filePic 控件。
+        /// txtPrice 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload filePic;
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
         
         /// <summary>
-        /// Image1 控件。
+        /// txtPsize 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.TextBox txtPsize;
+        
+        /// <summary>
+        /// txtPcomment 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtPcomment;
         
         /// <summary>
         /// radiotuijian 控件。
@@ -65,15 +74,6 @@ namespace Web_Project.View.admin_.Prize {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.RadioButtonList radiotuijian;
-        
-        /// <summary>
-        /// txtOrder 控件。
-        /// </summary>
-        /// <remarks>
-        /// 自动生成的字段。
-        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtOrder;
         
         /// <summary>
         /// Button1 控件。

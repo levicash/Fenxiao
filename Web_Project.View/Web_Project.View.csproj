@@ -110,6 +110,8 @@
     <Content Include="admin_\ChongZhiList\ChongZhi.aspx" />
     <Content Include="admin_\ChongZhiList\CzInfo.aspx" />
     <Content Include="admin_\ChongZhiList\CzList.aspx" />
+    <Content Include="admin_\Choujiang\AddInfo.aspx" />
+    <Content Include="admin_\Choujiang\Info.aspx" />
     <Content Include="admin_\Company\AInfo.aspx" />
     <Content Include="admin_\Contact\ContactInfo.aspx" />
     <Content Include="admin_\css\admin.css" />
@@ -132,8 +134,6 @@
     <Content Include="admin_\Images\proImg\i_20170410034720_2522.jpg" />
     <Content Include="admin_\Images\timg.png" />
     <Content Include="admin_\OrderList\AddWl.aspx" />
-    <Content Include="admin_\Prize\AddInfo.aspx" />
-    <Content Include="admin_\Prize\Info.aspx" />
     <Content Include="admin_\Prize\Winning.aspx" />
     <Content Include="admin_\Scripts\update.js" />
     <Content Include="admin_\Scripts\OperatingOrder.js" />
@@ -958,6 +958,20 @@
     <Compile Include="admin_\ChongZhiList\CzList.aspx.designer.cs">
       <DependentUpon>CzList.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin_\Choujiang\AddInfo.aspx.cs">
+      <DependentUpon>AddInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_\Choujiang\AddInfo.aspx.designer.cs">
+      <DependentUpon>AddInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_\Choujiang\Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_\Choujiang\Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin_\Company\AInfo.aspx.cs">
       <DependentUpon>AInfo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -985,20 +999,6 @@
     </Compile>
     <Compile Include="admin_\OrderList\AddWl.aspx.designer.cs">
       <DependentUpon>AddWl.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin_\Prize\AddInfo.aspx.cs">
-      <DependentUpon>AddInfo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_\Prize\AddInfo.aspx.designer.cs">
-      <DependentUpon>AddInfo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="admin_\Prize\Info.aspx.cs">
-      <DependentUpon>Info.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="admin_\Prize\Info.aspx.designer.cs">
-      <DependentUpon>Info.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin_\Prize\Winning.aspx.cs">
       <DependentUpon>Winning.aspx</DependentUpon>

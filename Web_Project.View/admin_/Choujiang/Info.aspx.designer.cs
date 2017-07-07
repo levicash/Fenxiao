@@ -7,7 +7,7 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Web_Project.View.admin_.Prize {
+namespace Web_Project.View.admin_.Choujiang {
     
     
     public partial class Info {
