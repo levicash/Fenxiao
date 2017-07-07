@@ -44,6 +44,8 @@
                         </th>
                         <th width="15%">是否显示
                         </th>
+                        <th width="15%">奖品图片
+                        </th>
                         <th width="7%">操作
                         </th>
                     </tr>
@@ -76,6 +78,12 @@
                                     <%# Eval("IsShow").ToString() == "0" ? "<img src='../Images/no.gif' />" : "<img src='../Images/yes.gif' />"%>
                                 </td>
                                 <td>
+                                    <a href='AddInfo.aspx?id=<%# Eval("Id") %>'>
+                                        <img src="<%#Eval("ImageUrll").ToString()==""?"../Images/no_pic.gif":("../Images/proImg/"+Eval("ImageUrll").ToString()) %>"
+                                            width="160px" height="60px" />
+                                    </a>
+                                </td>
+                                <td>
                                     <a href='AddInfo.aspx?id=<%# Eval("Id") %>' class="tablelink">修改</a>&nbsp;|&nbsp;<a
                                         href="javascript:void(0)" id="SingleDel" pid="<%#Eval("id") %>" class="tablelink">删除</a>
                                 </td>
@@ -96,11 +104,11 @@
                             href="javascript:void(0)"><span>
                                 <img src="../images/floor_btn_bg.png" /></span>更新顺序</a>
                 </div>--%>
+                </div>
             </div>
-        </div>
-        <script type="text/javascript">
-            $('.tablelist tbody tr:odd').addClass('odd');
-        </script>
+            <script type="text/javascript">
+                $('.tablelist tbody tr:odd').addClass('odd');
+            </script>
     </form>
 </body>
 </html>

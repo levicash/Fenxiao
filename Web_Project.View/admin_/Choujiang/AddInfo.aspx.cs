@@ -50,7 +50,7 @@ namespace Web_Project.View.admin_.Choujiang
                     txtPsize.Text = db.Rows[0]["Psize"].ToString();
                     txtPcomment.Text = db.Rows[0]["Pcomment"].ToString();
                     radiotuijian.SelectedValue = db.Rows[0]["isshow"].ToString();
-                    //Image1.ImageUrl = db.Rows[0]["ImgName"].ToString() == "" ? "~/admin_/Images/no_pic.gif" : ("../Images/proImg/" + db.Rows[0]["ImgName"].ToString());
+                    Image1.ImageUrl = db.Rows[0]["ImageUrll"].ToString() == "" ? "~/admin_/Images/no_pic.gif" : ("../Images/proImg/" + db.Rows[0]["ImageUrll"].ToString());
                 }
             }
         }
@@ -65,11 +65,44 @@ namespace Web_Project.View.admin_.Choujiang
                 int Psize = Convert.ToInt32(txtPsize.Text.Trim());
                 string Pcomment = txtPcomment.Text.Trim();
                 int isShow = Convert.ToInt32(radiotuijian.SelectedValue.ToString());//是否推荐
+                string imgName = filePic.FileName.ToString();
+                string imgPath = Server.MapPath("../Images/proImg/");
+                string NewName = "";
+
+                if (filePic.HasFile)
+                {
+                    string str = imgName.Substring(imgName.LastIndexOf('.') + 1);
+                    NewName = DateTime.Now.ToString("yyyyMMddhhmmss_ffff") + "." + str; //重命名上传文件
+                    if (!Directory.Exists(imgPath)) //判断路径是否存在
+                    {
+                        Directory.CreateDirectory(imgPath); //如果不存在创建文件夹           
+                    }
+                    filePic.SaveAs(imgPath + NewName); //图片 上传
+                }
+
                 if (Request["id"] != null)
                 {
+
+
                     int pid = Convert.ToInt32(Request["id"].ToString());
 
-                    string strSql = "UPDATE dbo.ws_Prize SET PNO ='" + Pno + "',PName='" + PName + "',Price=" + Price + ",PSize=" + Psize + ",PComment='" + Pcomment + "',isshow=" + isShow + " WHERE id=" + pid;
+                    if (NewName != "")
+                    {
+                        string sqlPic = "select * from ws_Prize where Id = " + pid + "";
+                        DataTable dt = DBHelpers.ExecuteDataTable(DBHelpers.conn, CommandType.Text, sqlPic, null);
+                        if (dt.Rows.Count > 0)
+                        {
+                            for (int i = 0; i < dt.Rows.Count; i++)
+                            {
+                                if (File.Exists(Server.MapPath("../Images/proImg/" + dt.Rows[i]["ImageUrll"].ToString())))
+                                {
+                                    File.Delete(Server.MapPath("../Images/proImg/" + dt.Rows[i]["ImageUrll"].ToString()));
+                                }
+                            }
+                        }
+                    }
+
+                    string strSql = "UPDATE dbo.ws_Prize SET PNO ='" + Pno + "',PName='" + PName + "',Price=" + Price + ",PSize=" + Psize + ",PComment='" + Pcomment + "',isshow=" + isShow + ",ImageUrll='" + NewName + "' WHERE id=" + pid;
 
                     int up = DBHelpers.ExecuteNonQuery(DBHelpers.conn, CommandType.Text, strSql, null);
                     if (up > 0)
@@ -87,7 +120,7 @@ namespace Web_Project.View.admin_.Choujiang
                 {
 
                     string strSql = "";
-                    strSql = " INSERT INTO ws_Prize( PNO , PName , PGrade , Price , PSize , PType , IsShow , PMessage , PComment ) VALUES  ('" + Pno + "','" + PName + "',1," + Price + "," + Psize + ",'1'," + isShow + ",'','" + Pcomment + "')";
+                    strSql = " INSERT INTO ws_Prize( PNO , PName , PGrade , Price , PSize , PType , IsShow , PMessage , PComment,ImageUrll ) VALUES  ('" + Pno + "','" + PName + "',1," + Price + "," + Psize + ",'1'," + isShow + ",'','" + Pcomment + "','" + NewName + "')";
 
                     int ic = DBHelpers.ExecuteNonQuery(DBHelpers.conn, CommandType.Text, strSql, null);
                     if (ic > 0)

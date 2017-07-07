@@ -85,7 +85,7 @@
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url: "LuckDraw.aspx/GetPrizeInfo",
+                url: "LuckPrize.aspx/GetPrizeInfo",
                 data: query,
                 dataType: "json",
                 success: function (result) {
@@ -96,6 +96,8 @@
                     for (var i = 0; i < jsonobj.length; i++) {
                         lottery.lotteryList.push(jsonobj[i].PName);//添加奖品名称数组
                         lottery.lotteryDes.push(jsonobj[i].PComment);//添加奖品评价数组
+
+                        $(".lottery-unit-" + i + " img").attr("src", "admin_/Images/proImg/" + jsonobj[i].ImageUrll);
                     }
                 },
                 error: function () {
@@ -111,7 +113,9 @@
             layer.open({
                 type: 1,
                 skin: 'layui-layer-rim', //加上边框
-                area: ['420px', '180px'], //宽高
+                area: ['420px', '230px'], //宽高
+                closeBtn: 0,
+                btn: ['确定'],
                 content: '<center><h3>恭喜您中了 ：' + PrizeName + '</h3><br/>' + PrizeDes + '</center>'
             });
         }
@@ -125,7 +129,7 @@
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url: "LuckDraw.aspx/insertWinning",
+                url: "LuckPrize.aspx/insertWinning",
                 data: query,
                 dataType: "json",
                 success: function (result) {
@@ -144,7 +148,7 @@
             $.ajax({
                 type: "POST",
                 contentType: "application/json",
-                url: "LuckDraw.aspx/GetPCountByUser",
+                url: "LuckPrize.aspx/GetPCountByUser",
                 data: query,
                 dataType: "json",
                 success: function (result) {
@@ -155,7 +159,7 @@
                     //parent.layer.close(index);
                 },
                 error: function () {
-
+                    //<img src="admin_/Images/proImg/20160910015711_3459.jpg" />
                 }
             });
 
@@ -169,7 +173,7 @@
             <tbody>
                 <tr>
                     <td class="lottery-unit lottery-unit-0">
-                        <img src="Roulette/img/Jgg/gift0.jpg" /><div class="mask"></div>
+                        <img src="Roulette/img/Jgg/gift0.jpg"/><div class="mask"></div>
                     </td>
                     <td class="lottery-unit lottery-unit-1">
                         <img src="Roulette/img/Jgg/gift1.jpg"><div class="mask"></div>

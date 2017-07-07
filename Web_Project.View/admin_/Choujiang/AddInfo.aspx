@@ -50,7 +50,7 @@
                     </td>
                 </tr>
 
-                <%--            <tr>
+                            <tr>
                 <td class="td_bg">
                     上传图片
                 </td>
@@ -61,7 +61,7 @@
                     <asp:Image ID="Image1" runat="server" ImageUrl="~/admin_/Images/no_pic.gif" Width="120"
                         Height="60" />
                 </td>
-            </tr>--%>
+            </tr>
                 <tr>
                     <td class="td_bg">是否显示：
                     </td>

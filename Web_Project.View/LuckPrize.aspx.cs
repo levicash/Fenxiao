@@ -26,7 +26,7 @@ namespace Web_Project.View
         {
             string str = string.Empty;
             string sql = "";
-            sql = "SELECT PName,PGrade,PComment FROM dbo.ws_Prize Where IsShow = 0 ORDER BY PGrade";
+            sql = "SELECT TOP 8 PName,PGrade,PComment,ImageUrll FROM dbo.ws_Prize Where IsShow = 1 ORDER BY PGrade";
             DataTable dt = DBHelpers.ExecuteDataTable(DBHelpers.conn, CommandType.Text, sql, null);
             str = JsonHandleHelper.DataTableToJSON(dt);
             return str;
